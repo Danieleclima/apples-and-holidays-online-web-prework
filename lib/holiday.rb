@@ -77,13 +77,14 @@ def all_supplies_in_holidays (holiday_supplies)
 end
 
 def all_holidays_with_bbq (holiday_supplies)
+  new_symbols = []
   holiday_supplies.map do |season, festivity|
     festivity.each do |key, value|
       if value.include?("BBQ") == true
-        puts key
-  binding.pry
+        new_symbols << key
       end
     end
   end
+  return new_symbols
 end
 
