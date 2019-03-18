@@ -80,7 +80,8 @@ def all_holidays_with_bbq (holiday_supplies)
   holiday_supplies.map do |season, festivity|
     festivity.each do |key, value|
       if value.include?("BBQ") == true
-        puts key.keys
+        puts key
+  binding.pry
       end
     end
   end
